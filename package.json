@@ -1,0 +1,25 @@
+{
+  "name": "logseq-plugin-random-walk",
+  "version": "0.0.1",
+  "main": "dist/index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "logseq": {
+    "id": "hayden_random_walk",
+    "icon": "./logo.png"
+  },
+  "dependencies": {
+    "@logseq/libs": "^0.0.1-alpha.25",
+    "vue": "^3.0.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.4",
+    "@vue/compiler-sfc": "^3.0.4",
+    "autoprefixer": "^9",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vite": "^1.0.0-rc.13"
+  }
+}
