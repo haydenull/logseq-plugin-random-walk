@@ -3,7 +3,7 @@
 点击按钮随机跳转一篇笔记
 
 ## Demo
-[](./demo.gif)
+![demo](./demo.gif)
 
 ## Install And Use
 1. turn on Logseq developer mode
