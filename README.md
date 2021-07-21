@@ -1,6 +1,7 @@
 # logseq-plugin-random-walk
 
 点击按钮随机跳转一篇笔记
+Click the button to jump to a random note
 
 ## Demo
 ![demo](./demo.gif)
