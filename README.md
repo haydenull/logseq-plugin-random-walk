@@ -7,5 +7,5 @@
 
 ## Install And Use
 1. turn on Logseq developer mode
-2. download package
+2. [download package](https://github.com/haydenull/logseq-plugin-random-walk/releases)
 3. unzip the zip file and load from Logseq plugins page

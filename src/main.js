@@ -3,9 +3,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
 
-console.log('[faiz:] === random walk boot', logseq)
-
-
 async function navRandomPage() {
   try {
     const res = await logseq.DB.datascriptQuery(`
@@ -20,7 +17,7 @@ async function navRandomPage() {
     }
     return Promise.reject()
   } catch (error) {
-    console.log('[faiz:] === error', error)
+    console.log('[faiz:] === navRandomPage error', error)
     return Promise.reject()
   }
 }
@@ -30,39 +27,18 @@ async function navRandomPage() {
 function createModel () {
   return {
     async bootRandomWalk() {
-      console.log('[faiz:] === bootRandomWalk click', logseq, logseq.baseInfo.id)
       try {
         const { 'original-name': id } = await navRandomPage()
         console.log('[faiz:] === bootRandomWalk page', id)
         logseq.App.pushState('page', { name: id })
       } catch (error) {
+        console.log('[faiz:] === bootRandomWalk error', error)
         logseq.showMainUI()
       }
     },
   }
 }
 
-// var(--ls-primary-text-color)
-// .cp__header a.button {
-//   padding: .25rem;
-//   margin: 0 4px;
-// }
-// a.button:hover {
-//   opacity: 1;
-//   background: var(--ls-tertiary-background-color);
-// }
-// div[data-injected-ui=hayden-random-walk-${key}] {
-//   display: flex;
-//   align-items: center;
-//   opacity: .55;
-//   font-weight: 500;
-//   position: relative;
-//   top: 0px;
-// }
-
-// div[data-injected-ui=hayden-random-walk-${key}]:hover {
-//   opacity: 1;
-// }
 /**
  * app entry
  */

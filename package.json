@@ -1,10 +1,10 @@
 {
   "name": "logseq-plugin-random-walk",
-  "version": "0.0.1",
-  "main": "dist/index.html",
+  "version": "0.0.2",
+  "main": "index.html",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build && cp package.json logo.png dist"
   },
   "logseq": {
     "id": "hayden_random_walk",
