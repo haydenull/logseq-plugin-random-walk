@@ -3,6 +3,8 @@
 点击按钮随机跳转一篇笔记
 Click the button to jump to a random note
 
+<img src="./logo.png" width="100" />
+
 ## Demo
 ![demo](./demo.gif)
 
